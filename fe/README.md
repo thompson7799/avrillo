@@ -1,34 +1,75 @@
-# Avrillo tech test
+# Nuxt 3 Minimal Starter
 
-## Tech Stack
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-- [Nuxt 3](https://v3.nuxtjs.org/)
-- [Vue 3](https://v3.vuejs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Laravel 11](https://laravel.com/)
-- [Docker](https://www.docker.com/)
+## Setup
 
-This project requires you to have node and docker installed
+Make sure to install the dependencies:
 
-To get set up from root run:
 ```bash
-# Bring up frontend
-cd fe && npm run purge-dev
+# npm
+npm install
 
-# Bring up backend 
-cd ../be && ./vendor/bin/sail up -d
+# pnpm
+pnpm install
 
-# run migrations
-./vendor/bin/sail artisan migrate
+# yarn
+yarn install
 
-# run tests
-./vendor/bin/sail artisan test
+# bun
+bun install
 ```
 
-I sadly ran out of time on this and didn't implement the register on the FE, but you should be able to just make a POST request in postman to localhost/api/register and pass body params as form-data (name, email, and password)
+## Development Server
 
-Once you have done this though, you should be able to login on the frontend, and just be presented with a list of 5 quotes
+Start the development server on `http://localhost:3000`:
 
-If you logout and log back in the quotes should remain the same as the api response is cached for 1 minute, however if you click the refresh button, you should be able to get new ones.
+```bash
+# npm
+npm run dev
 
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
