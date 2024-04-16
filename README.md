@@ -30,5 +30,5 @@ I sadly ran out of time on this and didn't implement the register on the FE, but
 
 Once you have done this though, you should be able to login on the frontend, and just be presented with a list of 5 quotes
 
-If you logout and log back in the quotes should remain the same as the api response is cached for 1 minute, however if you click the refresh button, you should be able to get new ones.
+If you logout and log back in, or refresh the page, the quotes should remain the same as the api response is cached for 1 minute, however if you click the refresh button above the quotes, you should be able to get new ones.
 
